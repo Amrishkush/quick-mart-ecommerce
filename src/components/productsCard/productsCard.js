@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+//  {/* two more rating and description in array deleted | using this we have to pass only {id} not {product.id} both are correct */}
 const ProductsCard = ({ products = [] }) => {
   return (
     <div className='card-group'>
       <div className='row m-3'>
         {products.map((product) => {
           console.log("product" , product)
-          const {id, title, description, category, image, price, rating} = product;   {/* using this we have to pass only {id} not {product.id} both are correct */}
+          const {id, title, category, image, price} = product;   
+         
           return (
             <div className='col-md-3' key= {id}>
               <Link to={`/products/${id}`} className='card m-2  p-3' style={{height: "360px", width: "300px", objectFit:'contain'}} >

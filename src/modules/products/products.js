@@ -1,6 +1,5 @@
 
 import { useEffect, useState } from 'react'
-import Categories from '../../components/categories/categories'
 import ProductsCard from '../../components/productsCard/productsCard'
 //basically products page it is
 const Products = () => {

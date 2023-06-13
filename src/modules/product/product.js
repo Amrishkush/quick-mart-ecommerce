@@ -16,7 +16,7 @@ const Product = () => {
             setProduct(data)
           }
           fetchProduct()
-        }, []) 
+        }, [id]) 
        const navigate = useNavigate();
         const HandleCart = ((product,redirect) => {
           console.log(product)

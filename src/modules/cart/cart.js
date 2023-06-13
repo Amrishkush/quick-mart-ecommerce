@@ -3,6 +3,7 @@ import "./cart.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  // eslint-disable-next-line
   const carts = JSON.parse(localStorage.getItem("cart")) || [];
   const navigate = useNavigate();
 
